@@ -9,9 +9,10 @@ return(
         <img src={logo} alt ="not found" />
         
         <div className='rightSide'>
-        <Link to="/">Home</Link>     |
+        <Link to="/Home">Home</Link>     |
         <Link to="/About">About</Link> |   
-        <Link to="/Campuses">Our Campuses</Link>    
+        <Link to="/Explore">Our Campuses</Link>     
+        <Link to="/BucketList">Bucket List</Link>   
 
         </div>
 
