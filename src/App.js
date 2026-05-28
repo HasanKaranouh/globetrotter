@@ -11,7 +11,6 @@ import About  from './pages/About1.jsx';
 import Campuses  from './pages/Campuses.jsx';
 
 function App() {
-  //you may write java script 
   return (
     <>
     <Router>
