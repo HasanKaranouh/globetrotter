@@ -7,7 +7,7 @@ import {BrowserRouter as Router , Routes , Route }
 import Footer from './components/Footer.js';
 import NavBar from './components/NavBar.js';
 import Home from './pages/Home.jsx';
-import About  from './pages/About1.jsx';
+import About  from './pages/About.jsx';
 import Campuses  from './pages/Campuses.jsx';
 
 function App() {
