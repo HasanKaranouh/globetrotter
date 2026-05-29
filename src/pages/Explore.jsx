@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 const Explore = () => {
 
-  const [searchTerm, setSearchTerm] = useState(''); //what I type in the search bar
+  const [searchTerm, setSearchTerm] = useState('') ; //what I type in the search bar
   const [countryData, setCountryData] = useState(null);//store the country info in tis
   const [error, setError] = useState('');//if spelling is wrong, put error message here
 
@@ -10,19 +10,33 @@ const Explore = () => {
   const handleSearch = async (e) => { //the function that calls the restcountries API
     e.preventDefault(); 
     setError('');
-    setCountryData(null);
+    setCountryData(null) ;
 
     try {
       const response = await fetch(`https://restcountries.com/v3.1/name/${searchTerm}`);
       if (!response.ok) {
-        throw new Error('Country not found. Please check your spelling!');
-      }
+        throw new Error('Country not found. Please check your spelling!');}
       const data = await response.json();
-      setCountryData(data[0]); // The API returns an array; we take the closest match(the first one)
+      setCountryData(data[0]) ; // The API returns an array, we take the closest match(the first one)
     } catch (err) {
       setError(err.message);
     }
   };
+
+  const handleSaveToBucketList = () => {
+    const existingList = JSON.parse(localStorage.getItem('bucketList')) || [];
+    const isAlreadySaved = existingList.some(country => country.name.common === countryData.name.common);
+
+    if (isAlreadySaved) {
+      alert(`${countryData.name.common} is already in your Bucket List!`);
+    } else {
+      existingList.push(countryData);
+      localStorage.setItem('bucketList', JSON.stringify(existingList));
+      alert(`${countryData.name.common} has been added to your Bucket List! ✈️`);
+    }
+  };
+
+
 
   return (
     <div style={{ padding: '40px 20px', textAlign: 'center', minHeight: '80vh' }}>
@@ -55,6 +69,11 @@ const Explore = () => {
           <p style={{ margin: '8px 0' }}><strong>Capital:</strong> {countryData.capital ? countryData.capital[0] : 'N/A'}</p>
           <p style={{ margin: '8px 0' }}><strong>Region:</strong> {countryData.region} ({countryData.subregion})</p>
           <p style={{ margin: '8px 0' }}><strong>Population:</strong> {countryData.population.toLocaleString()}</p>
+        <button 
+            onClick={handleSaveToBucketList} 
+            style={{ marginTop: '15px', padding: '10px 20px', backgroundColor: '#28a745', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer', width: '100%' }}>
+            + Save to Bucket List
+          </button>
         </div>
       )}
     </div>
