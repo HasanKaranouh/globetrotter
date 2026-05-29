@@ -31,7 +31,33 @@ const Explore = () => {
       
 
       <form onSubmit={handleSearch} style={{ margin: '20px 0' }}>
-        
+        <input 
+          type="text" 
+          placeholder="Search for a country (e.g., Italy, Japan)..." 
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          required
+          style={{ padding: '12px', width: '280px', borderRadius: '4px', border: '1px solid #ccc', marginRight: '10px' }}
+        />
+        <button type="submit" style={{ padding: '12px 24px', borderRadius: '4px', border: 'none', backgroundColor: '#0070f3', color: 'white', cursor: 'pointer' }}>
+          Search
+        </button>
+      </form>
+
+
+      {error && <p style={{ color: 'red', fontWeight: 'bold' }}>{error}</p>}
+
+
+      {countryData && (
+        <div style={{ border: '1px solid #eaeaea', padding: '30px', display: 'inline-block', borderRadius: '12px', boxShadow: '0 4px 8px rgba(0,0,0,0.05)', backgroundColor: '#fff', marginTop: '20px' }}>
+          <h2 style={{ margin: '0 0 15px 0' }}>{countryData.name.common}</h2>
+          <img src={countryData.flags.png} alt={`Flag of ${countryData.name.common}`} style={{ width: '220px', borderRadius: '4px', marginBottom: '15px' }} />
+          <p style={{ margin: '8px 0' }}><strong>Capital:</strong> {countryData.capital ? countryData.capital[0] : 'N/A'}</p>
+          <p style={{ margin: '8px 0' }}><strong>Region:</strong> {countryData.region} ({countryData.subregion})</p>
+          <p style={{ margin: '8px 0' }}><strong>Population:</strong> {countryData.population.toLocaleString()}</p>
+        </div>
+      )}
+    </div>
   );
 };
 
