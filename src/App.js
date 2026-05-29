@@ -7,8 +7,9 @@ import {BrowserRouter as Router , Routes , Route }
 import Footer from './components/Footer.js';
 import NavBar from './components/NavBar.js';
 import Home from './pages/Home.jsx';
+import Explore  from './pages/Explore.jsx';
+import BucketList  from './pages/BucketList.jsx';
 import About  from './pages/About.jsx';
-import Campuses  from './pages/Campuses.jsx';
 
 function App() {
   return (
@@ -17,8 +18,9 @@ function App() {
         <NavBar/>
           <Routes>
             <Route path='/' exact Component={Home}>   </Route>
+            <Route path='/Explore' exact Component={Explore}>   </Route>
+            <Route path='/BucketList' exact Component={BucketList}>   </Route>
             <Route path='/About' exact Component={About}>   </Route>
-            <Route path='/Campuses' exact Component={Campuses}>   </Route>
           </Routes>  
         <Footer/>
       </Router>
