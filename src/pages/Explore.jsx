@@ -17,7 +17,7 @@ const Explore = () => {
       if (!response.ok) {
         throw new Error('Country not found. Please check your spelling!');}
       const data = await response.json();
-      setCountryData(data[0]) ; // The API returns an array, we take the closest match(the first one)
+      setCountryData(data[0]) ; // The API returns an array, we take the closest match (the first one )
     } catch (err) {
       setError(err.message);
     }
