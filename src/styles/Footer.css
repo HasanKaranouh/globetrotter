@@ -8,8 +8,12 @@
     flex-direction: row;
     padding-top: 10px;
     color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight:  300;
 
     position: fixed;
     left: 0;
     bottom: 0;
+    
+    font-size: 12px;
 }
