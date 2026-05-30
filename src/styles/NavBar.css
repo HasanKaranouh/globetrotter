@@ -4,7 +4,6 @@
   background-color: #20272c;
   display: flex;
   flex-direction: row;
-  position: fixed;
 }
 .rightSide {
   flex: 50%;
