@@ -10,7 +10,7 @@ const About = () => {
       </p>
 
       <div style={{ maxWidth: '650px', margin: '0 auto', textAlign: 'left', lineHeight: '1.8', fontSize: '18px' }}>
-        <p style={{ marginBottom: '40px' }}>
+        <p style={{ marginBottom: '40px', textAlign: 'center', }}>
           GlobeTrotter is a modern web application designed to help you explore dynamic routing, API integration, and browser storage in a seamless, refresh-free environment.
         </p>
         <h3 style={{ fontSize: '24px', color: '#0070f3', marginBottom: '20px', borderBottom: '2px solid #eaeaea', paddingBottom: '10px' }}>
