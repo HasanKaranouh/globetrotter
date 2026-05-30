@@ -15,7 +15,7 @@ const BucketList = () => {
   };
 
   return (
-    <div style={{ padding: '40px 20px', textAlign: 'center', minHeight: '80vh' }}>
+    <div style={{marginBottom: '40px', padding: '40px 20px', textAlign: 'center', minHeight: '80vh' }}>
       <h1>My Bucket List</h1>
       <p>Your dream destinations saved for the future.</p>
 

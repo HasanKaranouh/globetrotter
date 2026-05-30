@@ -1,8 +1,9 @@
 import {Link} from 'react-router-dom';
+import earth from '../assets/earth.png';
 
 const Home = () => {
   return (
-    <div style={{ textAlign: 'center', padding: '60px 20px', minHeight: '80vh' }}>
+    <div style={{backgroundImage: `url(${earth})`, backgroundSize: 'cover', backgroundPosition: 'center', textAlign: 'center', padding: '60px 20px', minHeight: '80vh' }}>
       <h1 style={{ fontSize: '48px', color: '#0070f3', marginBottom: '20px' }}>Welcome to GlobeTrotter!</h1>
       
       <p style={{ fontSize: '19px', color: '#555', maxWidth: '600px', margin: '0 auto 40px', lineHeight: '1.6' }}>
