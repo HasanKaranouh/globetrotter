@@ -6,7 +6,7 @@ const Home = () => {
     <div style={{backgroundImage: `url(${earth})`, backgroundSize: 'cover', backgroundPosition: 'center', textAlign: 'center', padding: '60px 20px', minHeight: '80vh' }}>
       <h1 style={{ fontSize: '48px', color: '#0070f3', marginBottom: '20px'}}>Welcome to GlobeTrotter!</h1>
       
-      <p style={{ fontSize: '19px', color: '#ffffff', maxWidth: '600px', margin: '0 auto 40px', lineHeight: '1.6', fontWeight: 'bold'}}>
+      <p style={{ fontSize: '19px', color: '#ffffff', maxWidth: '600px', margin: '0 auto 40px', lineHeight: '1.6', fontStyle: 'italic' }}>
         Your companion for discovering new countries, learning about different regions, and building your dream travel bucket list.
       </p>
       
