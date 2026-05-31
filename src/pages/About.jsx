@@ -32,7 +32,7 @@ const About = () => {
           <p style={{ fontSize: '14px', color: '#888', textTransform: 'uppercase', letterSpacing: '1px', margin: '0' }}>
             Designed & Developed by
           </p>
-          <p style={{ fontSize: '24px', fontWeight: 'bold', color: '#111', margin: '10px 0 0 0' }}>
+          <p style={{ fontSize: '24px', fontWeight: 'bold', color: '#111', margin: '20px', paddingBottom: '25px'}}>
             Hasan Karanouh
           </p>
         </div>
