@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# GlobeTrotter
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+GlobeTrotter is a modern, responsive React Single Page Application (SPA) that allows users to explore data from all over the world using the REST Countries API and to make a personal travel bucket list.
 
-## Available Scripts
+## Live Demo
+Check out the live deployment here: https://globetrotter-swart-five.vercel.app/
+## Acknowledgements
+This project was developed as an academic assignment utilizing the starter template provided by the course professor. Core routing, API integration, data persistence features, and custom visual styling were implemented independently on top of the base template structure.
 
-In the project directory, you can run:
+## Features
+**Dynamic Routing:** Seamless, refresh-free page switching using React Router DOM.
+**Live API Integration:** Fetches real-time country details (flags, capitals, population, regions) from the REST Countries API.
+**Persistent Storage:** Uses browser `localStorage` to save and modify a custom travel bucket list that survives page refreshes.
+**Modern UI Polish:** Styled with standard pixels, and the 'Poppins' Google Font.
 
-### `npm start`
+## Technologies Used
+React.js (Frontend library)
+React Router DOM (Client-side routing)
+REST Countries API (Data fetching)
+LocalStorage API (Data persistence)
+Vanilla CSS (Global and inline styling)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Home Screen:
+![Home Page](screenshots/home.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Explore Page:
+  ![Explore Page](screenshots/explore.png)
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-Bucket List Page:
+  ![Bucket List Page](screenshots/bucketlist.png)
